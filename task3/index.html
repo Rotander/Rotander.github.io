@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Задание 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body class="root">
+    <header>
+        <div class="header-wraper">
+        <div class="head">
+            <img src="image.jpg" alt="Логотип" class="logo">
+            <h2>Задание 2</h2>
+        </div>
+        <nav>
+            <ul class="nav-wraper">
+                <li class="nav-item-wraper"><a href="inside.html">Внутренняя страница</a></li>
+                <li class="nav-item-wraper"><a href="about/about.html" >About</a></li>
+                <li class="nav-item-wraper"><a href="/about/about_again/about_again.html" >About again</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <main>
+    <ul> 
+        <li><a href="http://kubsu.ru/">Абсолютная гиперссылка на главную страницу сайта КубГУ</a></li> 
+        <li><a href="https://kubsu.ru/">Абсолютная на главную сайта kubsu.ru в протоколе https</a></li> 
+        <li><a id="image" href="https://kubsu.ru/"><img src="image.jpg" class="image" alt="flower"></a></li>
+        <li><a href="inside.html">Ссылка на внутренюю страницу</a></li>
+        <li><a href="/">Ссылка на главную страницу</a></li>
+        <li><a href="#image">Ссылка на фрагмент текущей страницы</a></li>
+        <li><a href="https://site.wow/page?num=1&count=5&name=John">Ссылка с тремя параметрами в URL</a></li> 
+        <li><a href="https://site.wow/page?id=uniqid">Ссылка с параметром id в URL</a></li> 
+        <li><a href="./inside.html">Ссылка на страницу во текущем каталоге</a></li>
+        <li><a href="./about/about.html">Ссылка на страницу в каталоге about</a></li>
+        <li><a href="./about/about.html">Ссылка на страницу, которая содержит ссылку на страницу в каталоге выше</a></li>
+        <li><a href="./about/about_again/about_again.html">Ссылка на страницу, которая содержит ссылку на страницу двумя каталогами выше</a></li>
+        <li><p>Контекстная <a href="https://kubsu.ru/">ссылка</a></p></li>
+        <li><a href="https://ru.wikipedia.org/wiki/%D0%AD%D1%81%D1%82%D0%B0%D1%84%D0%B5%D1%82%D0%B0_(%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B0)#%D0%92_%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%BC_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%BC_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B8">Ссылка на фрагмент стороннего сайта</a></li>
+        <li><img src="image.jpg" class="image" alt="flower" usemap="#shapes">
+        <map name="shapes">
+            <area shape="circle" coords="300,225,200" href="https://kubsu.ru/" alt="flower">
+            <area shape="rect" coords="0,0,600,450" href="https://ru.wikipedia.org/" alt="rectangle">
+        </map></li>
+
+
+        <li><a href="">Ссылка с пустым href</a></li>
+        <li><a>Ссылка без href</a></li>
+        <li> <a href="https://ru.wikipedia.org/" rel="nofollow">Ссылка, по которой запрещён переход поисковикам</a></li>
+        <li><!--noindex--><a href="https://ru.wikipedia.org/">Ссылка, запрещённая для индексации поисковиками</a><!--/noindex--></li>
+        <li><ol>
+            <li title="first"><a href="index.html">Главная</a></li>
+            <li title="second"><a href="./about/about.html">О сайте</a></li>
+            <li title="third"><a href="./about/about_again/about_again.html">О сайте ещё раз</a></li>
+        </ol></li>
+        <li><a href="ftp://user:password@computer.ru/main/cheat.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+    </ul>
+
+    <table class="first-table">
+        <caption>Продукты</caption>
+        <thead>
+        <tr>
+            <th scope="col">Номенклатура</th>
+            <th scope="col">Характеристика</th>
+            <th scope="col">Цена</th>
+            <th scope="col">Склад готовой продукции</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="chet-item">
+            <th scope="row">Елисеевский сервелат</th>
+            <td>В оболочке</td>
+            <td>100</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <th scope="row">Хлеб богатырский</th>
+            <td>В полиамиде</td>
+            <td>99</td>
+            <td>2</td>
+        </tr>
+        <tr class="chet-item">
+            <th scope="row">Венская салями</th>
+            <td>По 3 в упаковке</td>
+            <td>123</td>
+            <td>54</td>
+        </tr>
+        <tr>
+            <th scope="row">Таёжная вальсредер</th>
+            <td>№13</td>
+            <td>144</td>
+            <td>5</td>
+        </tr>
+        <tr class="chet-item">
+            <th scope="row">Княжеская п/к производ</th>
+            <td>Поликарбонад</td>
+            <td>190</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th scope="row">Ветчина славянская</th>
+            <td>Белкозин</td>
+            <td>220</td>
+            <td>0</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr class="chet-item">
+            <th scope="row" colspan="2">Словесная характеристика</th>
+            <td colspan="2">Числовая характеристика</td>
+        </tr>
+        </tfoot>
+    </table>
+
+    <h1>Форма</h1>
+    <form action="/"
+    method="POST" class="forms">
+    <label>
+        <input type="text" placeholder="ФИО">
+    </label>
+    <br>
+    <label>
+        <input type="tel" placeholder="Телефон">
+    </label>
+    <br>
+    <label>
+        <input type="email" placeholder="e-mail">
+    </label>
+    <br>
+    <label>
+        Дата рождения
+        <input type="date">
+    </label>
+    <br>
+    <label>
+    <input type="radio" value="male">
+    Мужской</label>
+    <label>
+    <input type="radio" value="female">
+    Женский</label> <br>
+    <label>
+        <br>
+        Любимый язык программирования
+        <br>
+        <select>
+            <option value="Pascal">Pascal</option>
+            <option value="C" >C</option>
+            <option value="C++" >C++</option>
+            <option value="JavaScript" >JavaScript</option>
+            <option value="PHP" >PHP</option>
+            <option value="Python" >Python</option>
+            <option value="Java" >Java</option>
+            <option value="Haskel" >Haskel</option>
+            <option value="Clojure" >Clojure</option>
+            <option value="Prolog" >Prolog</option>
+            <option value="Scala" >Scala</option>
+        </select>
+    </label>
+    <br>
+    <label>
+        <textarea placeholder="Биография"></textarea>
+    </label>
+    <br>
+    <label>
+        С контрактом ознакомлен(а)
+        <input type="checkbox">
+    </label>
+    <br>
+    <input type="submit" value="Сохранить">
+
+    </form>
+</main>
+
+<footer>
+    <p>©️ Артем Межера</p>
+
+</footer>
+
+</body>

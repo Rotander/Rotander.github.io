@@ -1,0 +1,140 @@
+.root {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-wraper {
+    width: 100%;
+}
+
+
+nav {
+    display: block;
+    min-width: 100px;
+}
+
+nav li { display: inline; }
+
+.nav-wraper {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-wraper ul { padding-inline-start: 0px }
+
+.nav-item-wraper {
+    display: block;
+    text-align: center;
+}
+
+main {
+    max-width: 960px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: inline-grid;
+}
+
+.forms {
+    max-width: 960px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    margin: auto auto;
+}
+
+.image {
+    width: 100%;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: separate;
+    border: 3px solid black;
+    margin: 100px auto 0 auto;
+    width: 100%;
+}
+
+th {
+    border: 2px solid black;
+}
+
+td {
+    border: 2px solid black;
+}
+
+footer {
+    max-width: 100%;
+    background-color: blueviolet;
+    color: #f5f5f5;
+    margin: 0;
+    position: relative;
+    /* top: 20px; */
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.even-line {
+    background-color: grey;
+}
+
+.first-table {
+    order: -1;
+}
+
+@media all and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .header-wraper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0;
+    }
+
+    main {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .nav-item-wraper {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .first-table {
+        order: 1;
+    }
+
+    .head {
+        justify-content: inherit;
+    }
+}
